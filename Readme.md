@@ -69,7 +69,7 @@ You may also need to adapt the paths (`data_root_dir, data_dir, data_test_dir an
 You can change the `Logging parameters` if you want to. With `append_rnd_string`, you can give each experiment you start a unique name.
 If you want to start your visdom server manually, just set `start_visdom=False`. If you do not want to use visdom logging at all, just remove the visdom logger from your
  experiment, e.g. `run_train_pipeline.py` line 47:
- 
+
  ```
  loggers={
        "visdom": ("visdom", {"auto_start": c.start_visdom})
