@@ -23,9 +23,19 @@ pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 conda install pytorch torchvision cpuonly -c pytorch # cpuonly：只有cpu
 conda install pytorch cuda80 torchvision -c pytorch # 无法安装正确版本
 
-print(torch.cuda.is_available())
+# jupyter notebook 安装
+conda install jupyter
+conda install jupyterlab
+pip3 install -r requirements.txt
+
+# No module named 'win32api'
+pip install pypiwin32
 ```
 
 - dataset
 
 https://drive.google.com/open?id=1RzPB1_bqzQhlWvU-YGvZzhx2omcDh38C
+
+- visdom
+
+[模块visdom安装与使用](https://blog.csdn.net/tanmx219/article/details/87800752)
